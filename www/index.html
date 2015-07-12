@@ -1,0 +1,26 @@
+<html>
+<head>
+	<base href="/">
+	<title>Test Taker | GleimCheck</title>
+</head>
+<body>
+	<div id="wsRactive"></div>
+	
+<script id='body' type='text/ractive'>
+<div>
+	Hello, From /template/Body.html Page
+</div>
+
+</script>
+<script id='template' type='text/ractive'>
+{{>body}}
+
+</script>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/appConfig.min.js"></script>
+	<script src="js/socket.io.min.js"></script>
+	<script src="js/ractive.min.js"></script>
+	<script src="js/racHome.min.js"></script>
+</body>
+</html>
