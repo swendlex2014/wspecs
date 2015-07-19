@@ -7,6 +7,12 @@
 		el : '#wsRactive', 
 		template : "#template",
 		data: {
+			page : function(a){
+				return a === "home";
+			},
+			IsLeftSlide : function(c){
+				return c === "1";
+			}
 		}
 	});
 
