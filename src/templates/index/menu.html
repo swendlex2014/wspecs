@@ -1,0 +1,33 @@
+<header class="header-frontend">
+	<div class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="fa fa-bars"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">W<span>Specs</span></a>
+			</div>
+			<div class="navbar-collapse collapse ">
+				<ul class="nav navbar-nav">
+					{{#menu}}
+					<li class="{{#page(a)}}active{{/}}"><a href="{{l}}.html">{{t}}</a></li>
+					{{/}}
+					<li class="dropdown language">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+							<img alt="" src="img/flags/us.png">
+							<span class="username">US</span>
+							<b class=" fa fa-angle-down"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><img alt="" src="img/flags/es.png"> Spanish</a></li>
+							<li><a href="#"><img alt="" src="img/flags/de.png"> German</a></li>
+							<li><a href="#"><img alt="" src="img/flags/ru.png"> Russian</a></li>
+							<li><a href="#"><img alt="" src="img/flags/fr.png"> French</a></li>
+						</ul>
+					</li>
+					<li><input type="text" placeholder=" Search" class="form-control search"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
