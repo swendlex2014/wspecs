@@ -1,21 +1,23 @@
+console.log(jQuery);
+console.log("OK");
 var RevSlide = function () {
 
-    return {
+	return {
 
         //Revolution Slider
         initRevolutionSlider: function () {
-            var api;
+        	var api;
 
 				 //setTimeout("", 1000);
 				 //jQuery('#revolutionul').show();
 
-api =  jQuery('.fullwidthabnner').revolution(
-	                {
-	                    delay:2000,
-	                    startheight:600,
-	                    startwidth:1150,
+				 api =  jQuery('.fullwidthabnner').revolution(
+				 {
+				 	delay:2000,
+				 	startheight:600,
+				 	startwidth:1150,
 
-	                    hideThumbs:10,
+				 	hideThumbs:10,
 
 	                    thumbWidth:100,                         // Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
 	                    thumbHeight:50,
@@ -54,8 +56,8 @@ api =  jQuery('.fullwidthabnner').revolution(
 
 	                    shadow:1,                               //0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
 	                    fullWidth:"on"                          // Turns On or Off the Fullwidth Image Centering in FullWidth Modus
-	                });
-        }
+	               });
+}
 
-    };
+};
 }();
