@@ -26,31 +26,30 @@
   <!-- Custom styles for this template -->
   <link href="css/style.min.css" rel="stylesheet">
   <link href="css/style-responsive.min.css" rel="stylesheet" />
-  <link href="css/home.min.css" rel="stylesheet" />
 </head>
 
 <body>
   @@ractiveTemplate
+  <div id="wsRactive"></div>
   
   <!-- js placed at the end of the document so the pages load faster -->
   <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/appConfig.min.js"></script>
+  <script src="js/jquery-migrate.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
   <!-- RaciveJs Data -->
-  <script src="js/wshelper.min.js"></script>
   <script src="js/ractive.min.js"></script>
-  <script src="js/rws_index.min.js"></script>
-
+  <script src="js/racHome.min.js"></script>
 
   <script type="text/javascript" src="js/hover-dropdown.min.js"></script>
-  <script defer src="js/jquery.flexslider.min.js"></script>
+  <script defer src="js/jquery-flexslider.min.js"></script>
   <script type="text/javascript" src="assets/bxslider/jquery.bxslider.min.js"></script>
 
-  <script type="text/javascript" src="js/jquery.parallax-1.1.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery-parallax.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/link-hover.min.js"></script>
-  <script src="assets/fancybox/source/jquery.fancybox.pack.min.js"></script>
+  <script src="assets/fancybox/source/jquery-fancybox-pack.min.js"></script>
   <script type="text/javascript" src="assets/revolution_slider/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
   <script type="text/javascript" src="assets/revolution_slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
@@ -59,10 +58,6 @@
   <script src="js/revulation-slide.min.js"></script>
 
   <script>
-
-    // Slide code
-    // RevSlide.initRevolutionSlider();
-
     $(window).load(function() {
       $('[data-zlname = reverse-effect]').mateHover({
         position: 'y-reverse',
@@ -75,7 +70,6 @@
         popup2Easing: 'easeOutBack'
       });
     });
-
     $(window).load(function() {
       $('.flexslider').flexslider({
         animation: "slide",
@@ -84,7 +78,6 @@
         }
       });
     });
-
     jQuery(".fancybox").fancybox();
   </script>
 
